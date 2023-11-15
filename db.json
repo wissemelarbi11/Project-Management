@@ -301,46 +301,170 @@
         }
       ],
       "spenttime": 2
+    },
+    {
+      "id": 14,
+      "nomProjet": "ExempleProjet",
+      "heureVendu": 60,
+      "progression": 0,
+      "echeance": "2023-05-18",
+      "statut": "Crée",
+      "employes": [
+        1
+      ],
+      "taches": [
+        {
+          "id": 15,
+          "libelle": "ExempleTache",
+          "heureVendu": 3,
+          "progression": 0,
+          "statut": "Crée",
+          "employes": [
+            1
+          ],
+          "sousTaches": [
+            {
+              "id": 15,
+              "libelle": "ExempleSousTache",
+              "heureVendu": 9,
+              "progression": 0,
+              "statut": "Crée",
+              "employes": [
+                1
+              ],
+              "spenttime": 0
+            }
+          ],
+          "spenttime": 0
+        }
+      ],
+      "spenttime": 0
+    },
+    {
+      "id": 126543,
+      "nomProjet": "Projet admin",
+      "heureVendu": 25,
+      "progression": 0,
+      "echeance": "2023-10-20",
+      "statut": "Crée",
+      "employes": [
+        1
+      ],
+      "taches": [
+        {
+          "id": 500,
+          "libelle": "TacheAdmin",
+          "heureVendu": 30,
+          "progression": 0,
+          "statut": "Crée",
+          "employes": [
+            1
+          ],
+          "sousTaches": [
+            {
+              "id": 4000,
+              "libelle": "SousTacheAdmin",
+              "heureVendu": 10,
+              "progression": 0,
+              "statut": "Crée",
+              "employes": [
+                1
+              ],
+              "spenttime": 0
+            }
+          ],
+          "spenttime": 0
+        }
+      ],
+      "spenttime": 0
+    },
+    {
+      "id": 10000,
+      "nomProjet": "ProjetEmployee",
+      "heureVendu": 10,
+      "progression": 0,
+      "echeance": "2020-10-20",
+      "statut": "Crée",
+      "employes": [
+        2
+      ],
+      "taches": [
+        {
+          "id": 14444,
+          "libelle": "TacheEmployee1",
+          "heureVendu": 5,
+          "progression": 0,
+          "statut": "Crée",
+          "employes": [
+            2
+          ],
+          "sousTaches": [
+            {
+              "id": 1500,
+              "libelle": "SousTacheEmployee1",
+              "heureVendu": 3,
+              "progression": 0,
+              "statut": "Crée",
+              "employes": [
+                2
+              ],
+              "spenttime": 0
+            }
+          ],
+          "spenttime": 0
+        }
+      ],
+      "spenttime": 0
+    },
+    {
+      "id": 12,
+      "nomProjet": "projet wejdenn",
+      "heureVendu": 10,
+      "progression": 100,
+      "echeance": "2023-02-10",
+      "statut": "Terminé",
+      "employes": [
+        1
+      ],
+      "taches": [
+        {
+          "id": 10,
+          "libelle": "TacheWejden",
+          "heureVendu": 5,
+          "progression": 200,
+          "statut": "Terminé",
+          "employes": [
+            1
+          ],
+          "sousTaches": [
+            {
+              "id": 124,
+              "libelle": "SousTacheWejden",
+              "heureVendu": 2,
+              "progression": 100,
+              "statut": "Terminé",
+              "employes": [
+                1
+              ],
+              "spenttime": 2
+            }
+          ],
+          "spenttime": 2
+        }
+      ],
+      "spenttime": 2
     }
   ],
   "employees": [
     {
-      "Nom": "kamel",
-      "birthdate": "",
-      "Prenom": "mekki",
-      "genre": "m",
-      "email": "",
-      "role": "admin",
-      "id": 3
-    },
-    {
-      "Nom": "rim",
-      "birthdate": "",
-      "Prenom": "rim",
+      "Nom": "Wejden",
+      "birthdate": "2000-03-21",
+      "Prenom": "barhoumi",
       "genre": "f",
-      "email": "",
+      "email": "wejden.barhoumi@esprit.tn",
       "role": "emp",
-      "profile": "ss.PNG",
-      "id": 4
-    },
-    {
-      "Nom": "test",
-      "birthdate": "2023-08-02",
-      "Prenom": "test",
-      "genre": "f",
-      "email": "tets1233",
-      "role": "emp",
-      "id": 5
-    },
-    {
-      "Nom": "wissem",
-      "birthdate": "2000-02-06",
-      "Prenom": "elarbi",
-      "genre": "m",
-      "email": "wissem.elarbi@esprit.tn",
-      "role": "emp",
-      "profile": "272912890_3223725234579000_3676414976301512514_n-removebg-preview.png",
-      "id": 6
+      "profile": "wejden.png",
+      "id": 1
     }
   ]
 }
