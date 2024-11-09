@@ -1,18 +1,24 @@
-<div class="toolbar" role="banner">
-  <a href="/home"><img
-      width="100"
-      alt="LOGO"
-      src="assets/acoustica.png"
-    /></a>
-<span style="text-align:center;width:90%;font-size:x-large">ACOUSTICA</span>
-<div class="spacer"></div>
 
-</div>
+<body>
+  <div class="account-pages my-5 pt-sm-5">
+      <div class="container">
+          <div class="row justify-content-center">
+              <div class="col-md-9 col-lg-8 col-xl-5">
+                  <div class="card overflow-hidden">
+                      <div class="card-body pt-4" >
 
+                          <h3 class="text-center mt-4 mb-4" >
+                              <a class="d-block auth-logo">
+                                  <img  src="assets/images/logo-dark.png" alt="" height="80" class="auth-logo-dark">
+                                  <img  src="assets/images/logo-dark.png" alt="" height="80" class="auth-logo-light">
+                              </a>
+                          </h3>
 
-<div class="col-md-12">
-  <div class="card card-container">
-    
+                          <div class="p-3">
+                            <h4 class="text-muted font-size-18 mb-1 text-center">Bienvenue!</h4>
+                            <p class="text-muted text-center">Connectez-vous pour continuer à Tunisie Telecom.</p>
+                       
+
     <form
       *ngIf="!isLoggedIn"
       name="form"
@@ -20,9 +26,11 @@
       #f="ngForm"
       novalidate
     >
-      <div class="form-group">
-        <label for="Nom">Nom</label>
+      <div class="form-horizontal mt-4">
+        
+        
         <input
+        placeholder="Nom"
           type="text"
           class="form-control"
           name="Nom"
@@ -38,9 +46,12 @@
           Nom is required!
         </div>
       </div>
-      <div class="form-group">
-        <label for="password">Password</label>
+      <div class="form-horizontal mt-4">
+        
+
+      
         <input
+        placeholder="Password"
           type="password"
           class="form-control"
           name="password"
@@ -60,11 +71,17 @@
           </div>
         </div>
       </div>
-      <div class="form-group">
-        <button class="btn btn-primary btn-block">
-          Login
+      <div class="col-8 text-end">
+        <button style="background-color: #4e73df;color: white;" class="btn  w-md waves-effect waves-light">
+          Se Connecter
         </button>
       </div>
+      <div class="form-group mb-0 row">
+        <div class="col-12 mt-4">
+            <a href="Forget-password" class="text-muted"><i class="mdi mdi-lock"></i> Vous avez oublié mot de passe ?</a>
+        </div>
+    </div>
+
       <div class="form-group">
         <div
           class="alert alert-danger"
@@ -79,5 +96,12 @@
     <div class="alert alert-success" *ngIf="isLoggedIn">
       Logged in as {{ roles }}.
     </div>
+   
+
   </div>
+  
+</div>
+<div class="mt-5 text-center">
+  <p style="color: #4e73df;">Vous n’avez pas de compte ?<a  style="color: #4e73df;"href="register"> Inscrivez-vous maintenant </a></p>
+  © Copyright 2024 Wissem ELARBI
 </div>

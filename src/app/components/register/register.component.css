@@ -5,14 +5,14 @@ label {
   
   .card-container.card {
     max-width: 400px !important;
-    padding: 40px 40px;
-    transform: translate(-5%,20%);
+    padding: 70px 70px;
+    transform: translate(-9%,10%);
 
   }
   
   .card {
-    background-color: #f7f7f7;
-    padding: 20px 25px 30px;
+    background-color: #d1dffa;
+    padding: 30px 25px 30px;
     margin: 0 auto 25px;
     margin-top: 50px;
     -moz-border-radius: 2px;
@@ -32,27 +32,69 @@ label {
     -webkit-border-radius: 50%;
     border-radius: 50%;
   }
-  .toolbar {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    background-color: #95ddba;
-    color: white;
-    font-weight: 600;
-    transform: translate(0%,2%);
-  }
+  a {
+    text-decoration: none;
+    margin-top: 10px; /* Adjust the margin as needed */
+}
+span {
+  margin-left: 5px; /* Adjust the margin as needed */
+}
+  
   .btn{
-    background-color: rgb(181, 239, 239);
-    border-color: rgb(181, 239, 239);
-    transform: translate(150%,70%);  }
+    padding: 5px 10px;
+     font-size: 16px;
+    margin-top: 10px;
+
+     }
+    
   .btn:hover{
       color: rgb(91, 146, 156);
-      background-color: rgb(215, 227, 229);
+      background-color: rgb(18, 92, 105);
      }
-  .col-md-6{
-    transform: translate(70%,20%);
+  .col-md-6 {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    
+    margin: 20px;
+}
+.animation-text{
+
+  font-size: 24px;
+  font-weight: bold;
+  animation: slideIn 1.5s ease-out;
+
+  
+  
+}
+@keyframes slideInFromRight {
+  0% {
+      transform: translateX(100%);
   }
+  100% {
+      transform: translateX(-100%);
+  }
+}
+
+.animation-text {
+  font-size: 35px;
+  color: #76a0ef;
+
+  font-weight: bold;
+  animation: slideInFromRight 5s linear infinite;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  
+}
+
+.alert-danger{
+
+  color: red;
+}
+.alert-warning{
+
+  color: red;
+}

@@ -1,79 +1,98 @@
+/* Styling for toolbar */
 .toolbar {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    background-color: #95ddba;
-    color: white;
-    font-weight: 600;
-  }
-
-.example-spacer {
-    flex: 1 1 auto;
-}
-.main-body{
-    padding-top: 20px;
-    margin: 0 auto;
-    max-width: 1248px ;
-    mat-form-field{
-        width: 100px;
-    }
-}
-.mat-elevation-z8{
-    transform: translate(0%,20%);
-}
-.button{
-    background-color: rgb(255, 247, 247);  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  padding: 20px 50px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+  color: white;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  transition: all 0.3s ease;
 }
 
+.toolbar:hover {
+  box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.3);
+}
 
+/* Logo text styling */
+.logo-text {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #f1f1f1;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  transition: color 0.3s ease;
+}
 
-.progress-container {
-    display: flex;
-    align-items: center;
+.logo-text:hover {
+  color: #d4af37; /* Gold color for luxury effect */
+}
+
+/* Navigation links container */
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+/* Individual navigation link styling */
+.nav-link {
+  color: #f1f1f1;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover effect for navigation links */
+.nav-link::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 300%;
+  height: 300%;
+  background-color: rgba(212, 175, 55, 0.2); /* Gold overlay */
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.5s ease;
+}
+
+.nav-link:hover::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.nav-link:hover {
+  color: #1e3c72;
+  background-color: rgba(255, 255, 255, 0.1);
+  font-weight: 600;
+}
+
+/* Elegant transition for active link */
+.nav-link.active {
+  font-weight: 700;
+  color: #d4af37;
+  border-bottom: 2px solid #d4af37;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .toolbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px;
   }
   
-  .progress-bar {
-    flex-grow: 1;
-    margin-right: 10px;
-  }
-  
-  .progress-value {
-    font-size: 14px;
-  }
-  
-  .red-icon {
-    color: red; /* Couleur de l'icône rouge */
-    font-size:20px; /* Taille de l'icône */
-  }
-
-  .red-bold {
-    color: red; /* Couleur rouge */
-    font-weight: bold; /* Gras */
-  }
-  
-
-
   .nav-links {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+    flex-direction: column;
+    gap: 15px;
   }
   
   .nav-link {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    padding: 10px 15px;
-    border-radius: 5px;
-    background-color: #f0f0f0;
-    transition: background-color 0.2s ease-in-out;
+    font-size: 1rem;
   }
-  
-  .nav-link:hover {
-    background-color: #ddd;
-  }
-  
+}
